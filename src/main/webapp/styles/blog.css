@@ -1,0 +1,103 @@
+/* .tab-pane.fade{ */
+/* 	display:none; */
+/* } */
+/* 
+.tab-pane.fade{
+	display:block;
+} */
+/* .sec-body col-md-9{
+float:right;
+}
+ */
+ 
+#footer {
+	float: left;
+  padding: 18px;
+  width: 64%;
+}
+ 
+#login{
+	
+	 margin-left:  25%;
+}
+
+li{
+	list-style: none;
+}
+
+#loginspace{
+	margin-top:10%;
+	border-style:none;
+	border-color:  #7FB5DA;
+	border-radius:5%;
+	border-spacing: 45px;
+	margin-bottom: 20%;
+}
+
+td{
+border-spacing: 30%;
+padding: 6%;
+	}
+	
+	
+#blog{
+	margin-top: 10%;
+	margin-bottom: 10%;
+}
+
+#select{
+	height: 5%;
+	width: auto;
+	
+}
+
+#viewdiv{
+	border-style:solid;
+	border-color:  #7FB5DA;
+	border-radius:2%;
+	border-spacing: 45px;
+	overflow: scroll;
+	height: 1000px;;
+	width: auto;
+}
+
+#blogdiv{
+	border-style:solid;
+	border-color:  #7FB5DA;
+	border-radius:2%;
+	border-spacing: 45px;
+	overflow: scroll;
+	height: 1000px;;
+	width: auto;
+}
+
+#blogsubtitle{
+	height:100%;
+	width:80%;
+	background: url("..//img/plainblue.jpg") ,highlighttext;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10%;
+	margin-top: 10%;
+	margin-left: 5%;
+	margin-right: 5%;
+	float: inherit;
+	size: landscape;
+	
+}
+
+h1{
+	color: #fff;
+	font-family: cursive;
+}
+h3{
+	color: #fff;
+	font-family: cursive;
+	
+}
+ #HCB_comment_box #HCB_comment_form_box{padding-bottom:1em}#HCB_comment_box .hcb-link{cursor:pointer}
+ #HCB_comment_box .hcb-icon{border:0px transparent none}#HCB_comment_box textarea {display:block;width:100%;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;width: 100%}
+ #HCB_comment_box blockquote{margin:10px;overflow:hidden}#HCB_comment_box .hcb-err{color:red}#HCB_comment_box .hcb-comment-tb{margin:0}
+ #HCB_comment_box .comment{position:relative}#HCB_comment_box .comment .likes{position:absolute;top:0;right:0;opacity:0.8}#HCB_comment_box .comment .hcb-comment-tb a{visibility:hidden}
+ #HCB_comment_box .comment:hover .hcb-comment-tb a{visibility:visible}#HCB_comment_box .gravatar{padding-right:2px}#HCB_comment_box input{margin-left:0}
+

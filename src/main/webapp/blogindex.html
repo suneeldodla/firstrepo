@@ -1,0 +1,496 @@
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+<title>blogIndex</title>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+<link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+<link type="text/css" rel="stylesheet" href="styles/index.css">
+<link type="text/css" rel="stylesheet" href="styles/blog.css">
+<link type="text/css" rel="stylesheet" href="styles/BlogRegistration.css">
+<script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+<script type="text/javascript" src="scripts/blog.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.11.2.js"></script>
+<script type="text/javascript" src="scripts/Registration.js"></script>
+<script type="text/javascript" src="scripts/BlogAngular.js"></script>
+
+
+
+
+
+
+<!-- begin htmlcommentbox.com -->
+ <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+ <script type="text/javascript" id="hcb"> 
+ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), 
+	 l=(""+window.location).replace(/'/g,"%27") || hcb_user.PAGE, h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16862&num=10");if (typeof s!="undefined") 
+		 document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+<!-- end htmlcommentbox.com -->
+
+
+</head>
+ <body id="blog" ng-controller="blogController" ng-app="myBlog">
+ <header>
+ 
+		<!-- -------------------##### LOGO + SEARCH + SUBMIT + LINKS #####------------------ -->
+
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<img src="images/logo2.PNG" height="60px" width="100px">
+				</div>
+
+				<div class="collapse navbar-collapse"
+					id="bs-example-navbar-collapse-1">
+					<div class="search-bar">
+						<form class="navbar-form navbar-left" role="search">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Search"
+									size="60">
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+					</div>
+					<div id="header-link">
+						<ul class="nav navbar-nav navbar-right">
+							<li><a href="#">Support</a></li>
+							<li><a href="#">My Account</a></li>
+							<li><a href="#">Cart</a></li>
+							<li><a href="#">Wishlist</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+	</header>
+
+
+	<div class="col-lg-1"></div>
+	<section class="col-lg-10">
+		<div id="sec-container">
+			<!-- -------------------##### MENU BAR #####------------------ -->
+			<div id="tabs">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#tabs-shop" data-toggle="tab"
+						aria-expanded="true">Shop Now</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" aria-expanded="false"> Sale <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li class=""><a href="#tabs-dropdown1-offers"
+								data-toggle="tab" aria-expanded="false">Offers</a></li>
+							<li class="divider"></li>
+							<li class=""><a href="#tabs-dropdown2-clearance"
+								data-toggle="tab" aria-expanded="false">Clearance Sale</a></li>
+						</ul></li>
+					<li class=""><a href="#tabs-clubcard" data-toggle="tab"
+						aria-expanded="false">Clubcard</a></li>
+					<li class=""><a href="#tabs-gift" data-toggle="tab"
+						aria-expanded="false">Gift Pooling</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown" aria-expanded="false"> Others <span
+							class="caret"></span>
+					</a>
+						<ul class="dropdown-menu">
+							<li class="blogclass"><a href="#tabs-dropdown1-blog"
+								data-toggle="tab" aria-expanded="false" id="blogid">Blog</a></li>
+							<li class="divider"></li>
+							<li class=""><a href="#tabs-dropdown2-forum"
+								data-toggle="tab" aria-expanded="false">Forum</a></li>
+						</ul></li>
+				</ul>
+				<div id="myTabContent" class="tab-content col-md-12 ">
+					<div class="tab-pane fade active in" id="tabs-shop">
+						<div class="sec-leftpane col-sm-3">
+							<p>Shops left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>Shops contents..</p>
+							<br> <br>
+							<p>Shops contents..</p>
+							<br> <br>
+							<p>Shops contents..</p>
+							<br> <br>
+							<p>Shops contents..</p>
+							<br> <br>
+							<p>Shops contents..</p>
+							<br> <br>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tabs-clubcard">
+						<div class="sec-leftpane col-sm-3">
+							<p>Clubcard left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>Clubcard contents..</p>
+							<br> <br>
+							<p>Clubcard contents..</p>
+							<br> <br>
+							<p>Clubcard contents..</p>
+							<br> <br>
+							<p>Clubcard contents..</p>
+							<br> <br>
+							<p>Clubcard contents..</p>
+							<br> <br>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tabs-gift">
+						<div class="sec-leftpane col-sm-3">
+							<p>gift left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>gift contents..</p>
+							<br> <br>
+							<p>gift contents..</p>
+							<br> <br>
+							<p>gift contents..</p>
+							<br> <br>
+							<p>gift contents..</p>
+							<br> <br>
+							<p>gift contents..</p>
+							<br> <br>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tabs-dropdown1-blog">
+						<div class="sec-leftpane col-sm-3">
+							<section class="wrapper">
+								<ul class="tabs">
+									<li><a href="#blogindex"></a></li>
+
+									<li><a href="#login"> Login to Write a Blog</a></li>
+									<li><a href="#registration"> Register Here</a></li>
+									<li><a href="#Write" ng-click="addCategory()">Write a
+											Blog</a></li>
+									<li><a href="#EditBlogs" ng-click="viewBlogs()">Edit a
+											Blog</a></li>
+									<li><a href="#viewBlogs" ng-click="viewBlogs()">view
+											Blogs</a></li>
+								</ul>
+								<div class="clr"></div>
+
+								<!--     <article id="tab1">
+      <a href="#edit">Edit</a>
+    </article>
+    <article id="tab2">
+       <a href="#Write">Edit</a>
+    </article>
+    <article id="tab3">
+      
+    </article> -->
+
+
+							</section>
+						</div>
+						<div class="sec-body col-md-9">
+							<section class="block">
+								<article id="#blogindex">
+									<div id="blogsubtitle">
+										<!-- blog index  -->
+										<h1 align="center">Welcome to Shoptico Blog</h1>
+										<h3 align="center">Every Little helps to make you know us
+											Better!!</h3>
+										<img align="middle" alt="" src="img/giphy.gif">
+									</div>
+									<!--  -->
+								</article>
+								<article id="login">
+									<div id="loginspace">
+										<fieldset>
+											<legend>Log In to Write a blog</legend>
+
+											<table id="logintable">
+												<tr>
+													<th>Username</th>
+													<td><input type="text" id="username" name="username" required></td>
+												</tr>
+												<tr>
+													<th>password</th>
+													<td><input type="password" id="password"
+														name="password" required></td>
+												</tr>
+											</table>
+											<div class="col-lg-10 col-lg-offset-2">
+												<button type="submit" class="btn btn-primary">Login</button>
+												<button type="reset" class="btn btn-default">Clear</button>
+												<a href="#registrationDiv">get registered</a>
+											</div>
+											<div id="registrationDiv"></div>
+										</fieldset>
+									</div>
+								</article>
+								<article id="registration">
+									<div id="emptyDiv"></div>
+									<div id="description">
+									</div>
+									<!--container start-->
+										<div id="container_body">
+											<div>
+												<h2 class="form_title">User Registration Form</h2>
+											</div>
+											<!--Form  start-->
+											<div id="form_name">
+												<div class="firstnameorlastname">
+														<div id="errorBox"></div>
+														<input type="text" name="Name" value=""
+															placeholder="First Name" class="input_name"> <input
+															type="text" name="LastName" value=""
+															placeholder="Last Name" class="input_name">
+												</div>
+												<div id="email_form">
+													<input type="text" name="Email" value=""
+														placeholder="Your Email" class="input_email">
+												</div>
+												<div id="Re_email_form">
+													<input type="text" name="enterEmail" value=""
+														placeholder="Re-enter Email" class="input_Re_email">
+												</div>
+												<div id="password_form">
+													<input type="password" name="Password" value=""
+														placeholder="New Password" class="input_password">
+												</div>
+												<!--birthday details start-->
+												<div>
+													<h3 class="birthday_title">Birthday</h3>
+												</div>
+												<div>
+													<input type="date" id="date" name="date">
+													<div id="radio_button">
+														<input type="radio" name="radiobutton" value="Female">
+														<label>Female</label> &nbsp;&nbsp;&nbsp; <input
+															type="radio" name="radiobutton" value="Male"> <label>Male</label>
+													</div>
+													<div>
+														<p id="sign_user" onClick="Submit()">Sign Up</p>
+													</div>
+												</div>
+												<!--form ends-->
+											</div>
+										</div>
+										<!--container ends-->
+								</article>
+								<article id="Write">
+									<div>
+
+										<fieldset>
+
+											<!-- <h2>Hello Mr/Mrs xyz,</h2>
+ -->
+											<label for="select" class="col-lg-2 control-label">Select
+												Category</label>
+											<div class="col-lg-10">
+
+												<!--    <input type="text" ng-repeat="Category in category"  value="{{Category.categoryName}}" ng-model="Category.category" > </input> -->
+												<select ><option ng-model="category.categoryName" ng-repeat="x in category">{{x}}</option></select>
+											</div>
+										</fieldset>
+										<form ng-submit="callBlog()">
+											<fieldset>
+												<div class="form-group">
+													<label for="inputText" class="col-lg-2 control-label">BlogName</label>
+													<div class="col-lg-10">
+														<input type="text" class="form-control" id="blogName"
+															placeholder="" name="blogName"
+															ng-model="categoryFormObj.blogName" required>
+													</div>
+												</div>
+											</fieldset>
+											<fieldset>
+												<div class="form-group">
+													<label for="textArea" class="col-lg-2 control-label"
+														id="textArea">BlogContent</label>
+													<div class="col-lg-10">
+														<textarea class="form-control" rows="10" id="blogContent"
+															name="blogContent" ng-model="categoryFormObj.blogContent"></textarea>
+
+													</div>
+												</div>
+											</fieldset>
+
+											<fieldset>
+												<div id="calenderdiv">
+													Write today's date<input type="text" id="calender"
+														name="calender" placeholder="mm/dd/yyyy"
+														ng-model="categoryFormObj.calender" required>
+												</div>
+
+											</fieldset>
+
+											<div class="form-group">
+
+												<div class="col-lg-10 col-lg-offset-2">
+
+													<button type="reset" class="btn btn-default">Cancel</button>
+													<button type="submit" class="btn btn-primary"
+														ng-click="callBlog()">Post</button>
+
+												</div>
+											</div>
+										</form>
+									</div>
+								</article>
+
+
+								<article id="EditBlogs">
+									<div id="blogedit">
+										<form ng-submit="updateEdit()">
+											<div id="viewdiv">
+												<h1>
+													<font color="black">Edit Blogs</font>
+												</h1>
+												<fieldset>
+													<table>
+														<tr>
+															<td>
+																<div ng-model="view.blogContent" ng-repeat="x in view">
+																	<h4
+																		ng-style="{border:solid 1px black;background-color:#ff0000;}"
+																		ng-model="view.blogName">{{x.blogName}}</h4>
+																	{{x.blogContent}}
+																	<h6 ng-model="view.latestEditDate">{{x.latestEditDate}}</h6>
+																	<hr>
+															</td>
+															<td>
+																<div id="footer">
+																	<textarea rows="4" cols="40" id="TextArea"
+																		ng-model="UpdateEdit.updateEdit">{{x.blogContent}}</textarea>
+																	<button class="btn btn-warning" id="save" value="save"
+																		ng-click="updateEdit()">Save</button>
+																</div>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</fieldset>
+											</div>
+										</form>
+									</div>
+								</article>
+								<!--==========================================================SHWETHA===============================================================================================================-->
+								<article id="viewBlogs">
+									<!-- <form ng-submit="postComment()"> -->
+										<div id="viewdiv">
+											<h1>
+												<font color="black">Blogs</font>
+											</h1>
+									
+											<fieldset>
+												<div ng-model="view.blogContent" ng-repeat="x in view">
+													<h4
+														ng-style="{border:solid 1px black;background-color:#ff0000;}"
+														ng-model="view.blogName">{{x.blogName}}</h4>
+													{{x.blogContent}}
+													<h6 ng-model="view.latestEditDate"><div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Box</a> is loading comments...</div>{{x.latestEditDate}}</h6>
+													
+													
+													<hr>
+												</div>
+											</fieldset>
+											
+											  
+											<div id="footer">
+											
+												<!-- <textarea rows="4" cols="50" id="TextArea"
+													ng-model="comment.commentText"></textarea>
+												<button class="btn btn-warning" id="postComment"
+													value="post" ng-click="postComment()">Post</button> -->
+											</div>
+										</div>
+<!-- 									</form>
+ -->								</article>
+							</section>
+							<!-- <p>blog contents..</p>
+                        <br>
+                        <br>
+                        <p>blog contents..</p>
+                        <br>
+                        <br>
+                        <p>blog contents..</p>
+                        <br>
+                        <br>
+                        <p>blog contents..</p>
+                        <br>
+                        <br>
+                        <p>blog contents..</p>
+                        <br>
+                        <br> -->
+						</div>
+					</div>
+
+
+					<div class="tab-pane fade" id="tabs-dropdown2-forum">
+						<div class="sec-leftpane col-sm-3">
+							<p>forum left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>forum contents..</p>
+							<br> <br>
+							<p>forum contents..</p>
+							<br> <br>
+							<p>forum contents..</p>
+							<br> <br>
+							<p>forum contents..</p>
+							<br> <br>
+							<p>forum contents..</p>
+							<br> <br>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tabs-dropdown1-offers">
+						<div class="sec-leftpane col-sm-3">
+							<p>offers left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>offers contents..</p>
+							<br> <br>
+							<p>offers contents..</p>
+							<br> <br>
+							<p>offers contents..</p>
+							<br> <br>
+							<p>offers contents..</p>
+							<br> <br>
+							<p>offers contents..</p>
+							<br> <br>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="tabs-dropdown2-clearance">
+						<div class="sec-leftpane col-sm-3">
+							<p>clearance left pane</p>
+							<p>All your list of links that you wanna give come here..</p>
+						</div>
+						<div class="sec-body col-md-9">
+							<p>clearance contents..</p>
+							<br> <br>
+							<p>clearance contents..</p>
+							<br> <br>
+							<p>clearance contents..</p>
+							<br> <br>
+							<p>clearance contents..</p>
+							<br> <br>
+							<p>clearance contents..</p>
+							<br> <br>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<div class="col-lg-1"></div>
+
+	<footer>
+		<div id="footercontent">
+			<p>@Copyrights Reserved</p>
+		</div>
+	</footer>
+</body>
+</html>

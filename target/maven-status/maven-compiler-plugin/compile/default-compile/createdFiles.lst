@@ -1,0 +1,12 @@
+com\retail\model\Category.class
+com\retail\controller\AddCommentServlet.class
+com\retail\model\Customer.class
+com\retail\controller\ViewServlet.class
+com\retail\dao\BlogDao.class
+com\retail\dao\CommentDao.class
+com\retail\model\Comment.class
+com\retail\dao\CategoryDao.class
+com\retail\model\Blog.class
+com\retail\controller\CategoryServlet.class
+com\retail\controller\TestServlet.class
+com\retail\controller\BlogServlet.class
